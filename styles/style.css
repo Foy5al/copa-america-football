@@ -61,6 +61,7 @@ h1{
     .button:hover a{
         color:#E02C6D; 
         background: #FFFFFF;
+        border: 1px solid #E02C6D;
         transition: 1s ease-in-out;
         font-size: 18px;
         
@@ -94,7 +95,6 @@ main{
 }
 .player{
     width: 330px;
-    height: 474px;
     padding: 15px;
     box-shadow: 2px 2px 40px lightgray;
 }
@@ -105,7 +105,7 @@ main{
 }
 /*-------------playes section Style start*-------------------*/
 
-/*------------------------Bottom Styles -------------*/
+/*------------------------Bottom icon and social link Styles -------------*/
 
 .icon_container{
     display: flex;
@@ -120,13 +120,17 @@ main{
 }
 
 .social_icon{
-    height: 32px;
-    width: 32px;
+    text-decoration: none;
     font-size: 20px;
-    padding: 8px;
-    margin: 5px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 20px;
     background-color: lightgray;
+}
+.social_icon a{
+    text-decoration: none;
+    color: black;
+    
 }
 .footer_text{
     margin-top: 10px;
@@ -137,7 +141,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    
 }
 .frame {
     width: 300px;
@@ -198,6 +202,7 @@ main{
 }
 h1{
     font-size: 48px;
+    
 }
 .top_right img, .bottom_right img{
     width: 456px;
@@ -314,6 +319,8 @@ h1{
     }
     h1{
         font-size: 35px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .top_right img, .bottom_right img{
         width: 100%;
