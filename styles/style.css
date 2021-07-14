@@ -39,13 +39,11 @@ h1{
     justify-content: center;
     align-items: center;
 }
-/* .top_left, .top_right, .bottom_left, .bottom_right{
-    margin-left: 140px;
-    margin-right: 100px;
-    margin-top: 40px;
-    margin-bottom: 140px;
-    padding: 30px;
-} */
+.top_left, .top_right, .bottom_left, .bottom_right{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
+}
 .top_right img, .bottom_right img{
     width: 556px;
     height: 438px;
@@ -114,6 +112,37 @@ main{
 }
 .footer_text{
     margin-top: 10px;
+}
+
+/*-------------------- bonus part styles----------------- */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.frame {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.frame img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.frame:hover img {
+    display: block;
+    background-color: rgba(243, 196, 87, 0.7);
+}
+
+.frame:hover img {
+    transform: scale(1.2);
+    transition: width 5s, height 5s, transform 1s ease-in-out;
 }
 
 /*------------media query start ---------------------------
@@ -272,6 +301,10 @@ h1{
         grid-column-gap: 30px;
         grid-row-gap: 27px;
         
+    }
+    .icon img{
+        width: 383px;
+        height: 110px;
     }
          
 }
